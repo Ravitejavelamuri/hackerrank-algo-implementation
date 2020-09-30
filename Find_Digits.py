@@ -10,7 +10,7 @@ def check(a):
             s = s + 1
     return s
 
-t = int(raw_input().strip())
+t = int(input().strip())
 for a0 in xrange(t):
-    n = int(raw_input().strip())
-    print check(n)
+    n = int(input().strip())
+    check(n)
