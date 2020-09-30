@@ -2,16 +2,16 @@
 
 import sys        
 
-t = int(raw_input().strip())
+k = int(input().strip())
 for a0 in xrange(t):
-    n,c,m = raw_input().strip().split(' ')
+    n,c,m = input().strip().split(' ')
     n,c,m = [int(n),int(c),int(m)]
-    chocs= n/c
+    choc= n/c
     wrapper = chocs
-    ex_chocs = wrapper/m
+    ex_choc = wrapper/m
     while wrapper >= m:
-        ex_chocs = wrapper / m
-        wrapper = ex_chocs + wrapper % m
-        chocs += ex_chocs
-    print chocs
+        ex_choc = wrapper / m
+        wrapper = ex_choc + wrapper % m
+        choc += ex_choc
+    print(choc)
 
