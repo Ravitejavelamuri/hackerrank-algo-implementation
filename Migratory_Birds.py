@@ -1,10 +1,12 @@
+import sys
+
 n = int(input().strip())
-types = list(map(int, input().strip().split(' ')))
+t = list(map(int, input().strip().split(' ')))
 m = 0
 v = 0
 for i in range(1,6):
-    t = types.count(i)
-    if t > m:
+    t1 = t.count(i)
+    if t1 > m:
         v = i
-        m = t
+        m = t1
 print(v)
