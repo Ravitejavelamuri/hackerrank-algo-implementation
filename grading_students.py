@@ -1,5 +1,5 @@
 #!/bin/python3
-grades = [int(input()) for p in range(int(input()))]
-[print(g+5 - g%5 if g%5 > 2 and g>37 else g) for g in grades]
+g = [int(input()) for p in range(int(input()))]
+[print(g1+5 - g1%5 if g1 > 37  and g1%5 > 2 else g1) for g1 in g]
 
 
